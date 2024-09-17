@@ -1,5 +1,5 @@
 variable "resource_group_name" {
-  default = "rg-aihub"
+  default = "tg-th-an-msaihub-rg"
 }
 
 variable "location" {
@@ -7,7 +7,7 @@ variable "location" {
 }
 
 variable "location_azopenai" {
-  default = "swedencentral"
+  default = "eastus"
 }
 
 variable "location_content_safety" {
@@ -15,87 +15,87 @@ variable "location_content_safety" {
 }
 
 variable "log_name" {
-  default = "log-aihub"
+  default = "tg-th-an-msaihub-log"
 }
 
 variable "azopenai_name" {
-  default = "cog-openai-aihub"
+  default = "tg-th-an-msaihub-azoai"
 }
 
 variable "content_safety_name" {
-  default = "cog-content-safety-aihub"
+  default = "tg-th-an-msaihub-safety"
 }
 
 variable "cognitive_services_name" {
-  default = "cog-cognitive-aihub"
+  default = "tg-th-an-msaihub-cogcs"
 }
 
 variable "vision_name" {
-  default = "cog-vision-aihub"
+  default = "tg-th-an-msaihub-cogvis"
 }
 
 variable "speech_name" {
-  default = "cog-speech-aihub"
+  default = "tg-th-an-msaihub-cogsp"
 }
 
 variable "bing_name" {
-  default = "cog-bing-aihub"
+  default = "tg-th-an-msaihub-cogbing"
 }
 
 variable "search_name" {
-  default = "srch-aihub"
+  default = "tg-th-an-msaihub-srch"
 }
 
 variable "form_recognizer_name" {
-  default = "cog-forms-aihub"
+  default = "tg-th-an-msaihub-cogfrm"
 }
 
 variable "storage_account_name" {
-  default = "stgenai"
+  default = "tgthanmsaihubsa"
 }
 
 variable "apim_name" {
-  default = "apim-aihub"
+  default = "tg-th-an-msaihub-apim"
 }
 
 variable "appi_name" {
-  default = "appi-aihub"
+  default = "tg-th-an-msaihub-appi"
 }
 
 variable "publisher_name" {
-  default = "contoso"
+  default = "Thorogood"
 }
 
 variable "publisher_email" {
-  default = "admin@contoso.com"
+  default = "andrew.kennedy@thorogood.com"
 }
 
 variable "virtual_network_name" {
-  default = "vnet-aihub"
+  default = "tg-th-an-msaihub-vnet"
 }
 
 variable "managed_identity_name" {
-  default = "id-aihub"
+  default = "tg-th-an-msaihub-id"
 }
 
 variable "cae_name" {
-  default = "cae-aihub"
+  default = "tg-th-an-msaihub-cae"
 }
 
 variable "ca_chat_name" {
-  default = "ca-chat-aihub"
+  default = "tg-th-an-msaihub-ca-chat"
 }
 
 variable "ca_prep_docs_name" {
-  default = "ca-prep-docs-aihub"
+  default = "tg-th-an-msaihub-ca-prepdocs"
 }
 
 variable "ca_aihub_name" {
-  default = "ca-aihub"
+  default = "tg-th-an-msaihub-ca-aihub"
 }
 
 variable "cv_name" {
-  default = "cv-aihub"
+  default = "tg-th-an-msaihub-cv"
 }
 
 variable "ca_chat_image" {
@@ -148,7 +148,7 @@ variable "enable_openai_plugin_compare_financial_products" {
 
 variable "use_private_endpoints" {
     type = bool
-    default = true
+    default = false
 }
 
 variable "allowed_ips" {
