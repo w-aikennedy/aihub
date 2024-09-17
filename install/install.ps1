@@ -2,7 +2,7 @@ Write-Output ""
 $ErrorActionPreference = 'stop'
 
 # GitHub Org and repo hosting AI Hub
-$GitHubOrg = "azure"
+$GitHubOrg = "w-aikennedy"
 $GitHubRepo = "aihub"
 
 $AIHubRoot = "./.aihub"
@@ -37,7 +37,7 @@ if (!(Test-Path $AIHubRoot -PathType Container)) {
 }
 
 $latest_aihub=$(Invoke-WebRequest -Headers $githubHeader -Uri https://api.github.com/repos/Azure/aihub/releases/latest).content | convertfrom-json | Select-Object -ExpandProperty tag_name
-$zipFileUrl = "https://github.com/Azure/aihub/releases/download/$latest_aihub/aihub-tf-module.zip"
+$zipFileUrl = "https://github.com/w-aikennedy/aihub/releases/download/$latest_aihub/aihub-tf-module.zip"
 Write-Output "Downloading $zipFileUrl ..."
 $zipFilePath = "aihub-tf-module.zip" 
 $githubHeader.Accept = "application/octet-stream"
