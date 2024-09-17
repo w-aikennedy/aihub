@@ -36,7 +36,7 @@ if (!(Test-Path $AIHubRoot -PathType Container)) {
     throw "Cannot create $AIHubRoot"
 }
 
-$latest_aihub=$(Invoke-WebRequest -Headers $githubHeader -Uri https://api.github.com/repos/Azure/aihub/releases/latest).content | convertfrom-json | Select-Object -ExpandProperty tag_name
+$latest_aihub=$(Invoke-WebRequest -Headers $githubHeader -Uri https://api.github.com/repos/w-aikennedy/aihub/releases/latest).content | convertfrom-json | Select-Object -ExpandProperty tag_name
 $zipFileUrl = "https://github.com/w-aikennedy/aihub/releases/download/$latest_aihub/aihub-tf-module.zip"
 Write-Output "Downloading $zipFileUrl ..."
 $zipFilePath = "aihub-tf-module.zip" 
